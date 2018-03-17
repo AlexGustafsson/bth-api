@@ -1,0 +1,52 @@
+{
+  "name": "bth-api",
+  "version": "0.1.0",
+  "description": "An all purpose API for Blekinge Tekniska Högskola's (BTH's) student portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && nyc ava -v test/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^11.6.0",
+    "xo": "^0.20.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "pdf-text": "^0.4.0"
+  },
+  "xo": {
+    "space": 2,
+    "esnext": true,
+    "rules": {
+      "curly": [
+        "error",
+        "multi-or-nest",
+        "consistent"
+      ],
+      "no-use-before-define": [
+        "error",
+        {
+          "classes": false
+        }
+      ],
+      "unicorn/catch-error-name": [
+        "error",
+        {
+          "name": "error"
+        }
+      ],
+      "dot-notation": [
+        "off"
+      ],
+      "quote-props": [
+        "off"
+      ],
+      "object-curly-spacing": [
+        "off"
+      ]
+    }
+  }
+}
