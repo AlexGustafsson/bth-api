@@ -28,7 +28,7 @@ console.print(books[0]);
 > ISBN 978-91-47-05291-2
 ```
 
-_Note: For now, the API uses the BTH_AUTH_KEY environment variable to authenticate. The key is received by signing in on the student portal at BTH's website and extracting the value for the cookie '.BTHAT'._
+_Note: For now, the API uses requires an auth parameter to authenticate. The key is received by signing in to the student portal at BTH's website and extracting the value for the cookie '.BTHAT'._
 
 ### Documentation
 
@@ -36,17 +36,17 @@ _Note: For now, the API uses the BTH_AUTH_KEY environment variable to authentica
 
 ```JavaScript
   const api = require('bth-api');
-  api.fetchUserInfo();
-  api.fetchScannedExams();
-  api.fetchScannedExams(examId);
-  api.fetchScannedExam(examId);
-  api.fetchExamRegistrations();
-  api.fetchCourseRegistrations();
+  api.fetchUserInfo(auth);
+  api.fetchScannedExams(auth);
+  api.fetchScannedExams(examId, auth);
+  api.fetchScannedExam(examId, auth);
+  api.fetchExamRegistrations(auth);
+  api.fetchCourseRegistrations(auth);
   api.fetchCoursePlans(courseId);
   api.fetchCoursePlan(courseId, revision, asText = false);
   api.fetchCourseBooks(courseId);
   api.fetchComingExams(from, to, courseId);
-  api.fetchActiveCourses();
+  api.fetchActiveCourses(auth);
 ```
 
 _Note: the documentation is not yet completed. The API is still subject to change._
