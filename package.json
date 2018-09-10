@@ -10,8 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.25.0",
-    "nyc": "^11.6.0",
-    "xo": "^0.20.3"
+    "nyc": "^13.0.1",
+    "xo": "^0.23.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -45,6 +45,9 @@
         "off"
       ],
       "object-curly-spacing": [
+        "off"
+      ],
+      "prefer-destructuring": [
         "off"
       ]
     }
