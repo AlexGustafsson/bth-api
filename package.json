@@ -1,6 +1,6 @@
 {
   "name": "bth-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An all purpose API for Blekinge Tekniska Högskola's (BTH's) student portal",
   "main": "index.js",
   "scripts": {
