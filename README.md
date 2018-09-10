@@ -47,6 +47,8 @@ _Note: For now, the API uses requires an auth parameter to authenticate. The key
   api.fetchCourseBooks(courseId);
   api.fetchComingExams(from, to, courseId);
   api.fetchActiveCourses(auth);
+  api.fetchAccessCards(auth);
+  api.fetchCourseResults(auth, courseId, courseOccasion, courseCode);
 ```
 
 _Note: the documentation is not yet completed. The API is still subject to change._
